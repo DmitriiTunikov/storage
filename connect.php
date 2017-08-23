@@ -5,7 +5,7 @@
 //подключение в базе данных
   function connect_db()
   {
-     $mysqli = new mysqli("localhost", "admind", "oblomisanton11", "storage");
+     $mysqli = new mysqli("localhost", "dima", "zyDiNJe8", "storage");
         
     header("Content-Type: text/html; charset=UTF-8"); // Где-нибудь в начале PHP скрипта
     $mysqli->query( "SET CHARSET utf8" );
@@ -19,7 +19,7 @@
   
   function connect_db_orders()
   {
-    $mysqli = new mysqli("localhost", "admind", "oblomisanton11", "storage");
+    $mysqli = new mysqli("localhost", "dima", "zyDiNJe8", "storage");
         
     //header("Content-Type: text/html; charset=UTF-8"); // Где-нибудь в начале PHP скрипта
     $mysqli->query( "SET CHARSET utf8" );

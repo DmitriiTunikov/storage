@@ -131,8 +131,8 @@ function work_back()
   $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, $fileType);
   
   date_default_timezone_set('Europe/Moscow');
-  ob_end_clean();
-  $objWriter->save($file_name);
+  
+  //$objWriter->save($file_name);
 }
 
 function work($str)

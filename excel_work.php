@@ -127,9 +127,9 @@ function work_back()
     }
     $objPHPExcel->setActiveSheetIndex(1)
     ->setCellValue('A20', "Сумма прописью: ");
-  /*
-  $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, $fileType);
   
+  $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, $fileType);
+  /*
   $objWriter->save($file_name);*/
 }
 

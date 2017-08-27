@@ -129,8 +129,8 @@ function work_back()
     ->setCellValue('A20', "Сумма прописью: ");
   
   $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, $fileType);
-  /*
-  $objWriter->save($file_name);*/
+  
+  $objWriter->save($file_name);
 }
 
 function work($str)

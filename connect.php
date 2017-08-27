@@ -12,6 +12,7 @@
 
     if ($mysqli->connect_errno == true)
     { 
+        var_dump($mysqli->connect_errno);
         echo "call admin";
     }
     return $mysqli;
@@ -25,6 +26,7 @@
     $mysqli->query( "SET CHARSET utf8" );
     if ($mysqli->connect_errno == true)
     { 
+      var_dump($mysqli->connect_errno);
         echo "call admin";
     }
     return $mysqli;

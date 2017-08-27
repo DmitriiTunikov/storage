@@ -30,6 +30,8 @@ function MainPage()
     $db = connect_db();
     $name = back_base_name();
 
+    var_dump($name);
+    
     $db->query("TRUNCATE TABLE $name");
 
     include_once "excel_work.php";

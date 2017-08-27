@@ -94,9 +94,8 @@ function work_back()
     $file_name = $_SERVER['DOCUMENT_ROOT'] . $src_str;
     
     var_dump($file_name);
-    /*$fileType = 'Excel5';
+    $fileType = 'Excel5';
 
-   //$fileType = 'Excel5';
     $objReader = PHPExcel_IOFactory::createReader($fileType);
     $objPHPExcel = $objReader->load($file_name);
 
@@ -128,7 +127,7 @@ function work_back()
     }
     $objPHPExcel->setActiveSheetIndex(1)
     ->setCellValue('A20', "Сумма прописью: ");
-
+  /*
   $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, $fileType);
   
   $objWriter->save($file_name);*/

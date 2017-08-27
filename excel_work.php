@@ -91,7 +91,7 @@ function work_back()
     $src_str = "/data/dar_td.xls";
   }
 
-    $file_name = $_SERVER['DOCUMENT_ROOT'] . $src_str;
+    $file_name = $src_str;//$_SERVER['DOCUMENT_ROOT'] . $src_str;
     
     var_dump($file_name);
     $fileType = 'Excel5';

@@ -75,8 +75,6 @@
                       $_SESSION["second_name"] = "orders_elena";
                   }
                   header("location: main.php");
-                //MainPage();
-                //drow_orders_table("не оплачен");
             }
             else
             {

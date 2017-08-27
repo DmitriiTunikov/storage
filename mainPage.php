@@ -35,7 +35,7 @@ function MainPage()
     $db->query("TRUNCATE TABLE $name");
 
     include_once "excel_work.php";
-    //work_back();
+    work_back();
     
   
        echo "<div class='layer1'>

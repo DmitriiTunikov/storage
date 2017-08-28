@@ -93,7 +93,6 @@ function work_back()
 
     $file_name = $_SERVER['DOCUMENT_ROOT'] . $src_str;
     
-    var_dump($file_name);
     $fileType = 'Excel5';
 
     $objReader = PHPExcel_IOFactory::createReader($fileType);

@@ -47,12 +47,12 @@ function MakeNewFizScore(&$src, &$dst, $dst_str)
     else if ($_SESSION["name"] == "orders_mh")
     {
       work("dar_mh.xls");
-      header("location: save_xls/save_xls_mh.php");
+      header("location: save_xls_mh.php");
     }
     else if($_SESSION["name"] == "orders_garden")
     {
       work("dar_garden.xls");
-      header("location: save_xls/save_xls_garden.php");
+      header("location: save_xls_garden.php");
     }
     else if($_SESSION["name"] == "orders")
     {
@@ -72,7 +72,7 @@ function work_back()
 
   if ($_SESSION["second_name"] == "orders_elena")
   {
-    $src_str = "/data/dar.xls";
+    $src_str = "//data//dar.xls";
   }
   else if ($_SESSION["name"] == "orders_mh")
   {
@@ -91,7 +91,7 @@ function work_back()
     $src_str = "/data/dar_td.xls";
   }
 
-    $file_name = $src_str;//$_SERVER['DOCUMENT_ROOT'] . $src_str;
+    $file_name = $_SERVER['DOCUMENT_ROOT'] . $src_str;
     
     $fileType = 'Excel5';
 

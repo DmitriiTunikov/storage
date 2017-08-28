@@ -133,6 +133,7 @@ function work_back()
   
   $objWriter->save($file_name);
   ini_set('display_errors', 1);
+  ini_set('error_reporting', E_ALL);
 }
 
 function work($str)

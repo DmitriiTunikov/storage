@@ -132,6 +132,7 @@ function work_back()
   date_default_timezone_set('Europe/Moscow');
   
   $objWriter->save($file_name);
+  ini_set('display_errors', 1);
 }
 
 function work($str)

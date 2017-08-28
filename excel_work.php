@@ -134,7 +134,7 @@ function work_back()
   ini_set("display_errors",1);
   error_reporting(E_ALL);
 
-  $objWriter->save($file_name);
+  //$objWriter->save($file_name);
 }
 
 function work($str)

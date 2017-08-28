@@ -131,10 +131,10 @@ function work_back()
   
   date_default_timezone_set('Europe/Moscow');
   
-  ini_set("display_errors",1);
-  error_reporting(E_ALL);
+  //ini_set("display_errors",1);
+  //error_reporting(E_ALL);
 
-  //$objWriter->save($file_name);
+  $objWriter->save($file_name);
 }
 
 function work($str)

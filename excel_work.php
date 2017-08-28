@@ -38,7 +38,7 @@ function GetDoc($filepath, $sheet)
 function MakeNewFizScore(&$src, &$dst, $dst_str)
 {
     $_POST['fileSrc'] = $src;
-    header("location: test.php"); 
+    //header("location: test.php"); 
     if ($_SESSION["second_name"] == "orders_elena")
     {
       work("dar.xls");

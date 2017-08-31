@@ -129,7 +129,7 @@ function work_back()
     ->setCellValue('A20', "Сумма прописью: ");
   
   $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, $fileType);
-  
+  ob_end_clean();
   date_default_timezone_set('Europe/Moscow');
   
   /*ini_set("display_errors",1);

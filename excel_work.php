@@ -93,7 +93,7 @@ function work_back()
 
     $file_name = $_SERVER['DOCUMENT_ROOT'] . $src_str;
     
-  chmod($file_name, 0755);
+  chmod($file_name, 0777);
     $fileType = 'Excel5';
 
     $objReader = PHPExcel_IOFactory::createReader($fileType);
@@ -134,7 +134,7 @@ function work_back()
   
   /*ini_set("display_errors",1);
   error_reporting(E_ALL);*/
-
+  unlink($file_name);
   ini_set("display_errors",1);
   error_reporting(E_ALL);
   $objWriter->save($file_name);

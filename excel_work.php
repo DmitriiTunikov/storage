@@ -137,7 +137,7 @@ function work_back()
   //ini_set("display_errors",1);
   //error_reporting(E_ALL);
   //unlink($file_name);
-  $objWriter->save($file_name);
+  //$objWriter->save($file_name);
 
 }
 
@@ -236,7 +236,7 @@ function work($str)
              
   $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, $fileType);
   /* Записываем в файл */
- // $objWriter->save($file_name);
+  $objWriter->save($file_name);
 }
 
 /*$ar = GetDoc("D:files/tovar.xls", 0);

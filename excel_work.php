@@ -72,7 +72,7 @@ function work_back()
 
   if ($_SESSION["second_name"] == "orders_elena")
   {
-    $src_str = "\data\dar.xls";
+    $src_str = "/data/dar.xls";
   }
   else if ($_SESSION["name"] == "orders_mh")
   {
@@ -131,9 +131,9 @@ function work_back()
   
   date_default_timezone_set('Europe/Moscow');
   
-  ini_set("display_errors",1);
+  /*ini_set("display_errors",1);
   error_reporting(E_ALL);
-  chmod($file_name, 0777);
+  chmod($file_name, 0777);*/
 
   ini_set("display_errors",1);
   error_reporting(E_ALL);

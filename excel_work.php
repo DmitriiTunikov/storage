@@ -92,8 +92,8 @@ function work_back()
   }
 
     $file_name = $_SERVER['DOCUMENT_ROOT'] . $src_str;
-    
-    chmod($file_name, 0777);
+    $file_name1 = $_SERVER['DOCUMENT_ROOT']."/data";
+    chmod($file_name1, 0777);
     $fileType = 'Excel5';
 
     $objReader = PHPExcel_IOFactory::createReader($fileType);
@@ -131,7 +131,6 @@ function work_back()
   $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, $fileType);
   //ob_end_clean();
   date_default_timezone_set('Europe/Moscow');
-  
   /*ini_set("display_errors",1);
   error_reporting(E_ALL);*/
   

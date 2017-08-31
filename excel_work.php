@@ -236,7 +236,7 @@ function work($str)
              
   $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, $fileType);
   /* Записываем в файл */
-  $objWriter->save($file_name);
+ // $objWriter->save($file_name);
 }
 
 /*$ar = GetDoc("D:files/tovar.xls", 0);

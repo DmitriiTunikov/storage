@@ -133,6 +133,8 @@ function work_back()
   
   //chmod($file_name, 0777);
 
+  ini_set("display_errors",1);
+  error_reporting(E_ALL);
   $objWriter->save($file_name);
   ini_set("display_errors",1);
   error_reporting(E_ALL);

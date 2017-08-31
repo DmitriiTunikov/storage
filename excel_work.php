@@ -91,8 +91,7 @@ function work_back()
     $src_str = "/data/dar_td.xls";
   }
 
-    $file_name = 
-    $_SERVER['DOCUMENT_ROOT'] . $src_str;
+    $file_name = $_SERVER['DOCUMENT_ROOT'] . $src_str;
     
     $fileType = 'Excel5';
 
@@ -132,10 +131,11 @@ function work_back()
   
   date_default_timezone_set('Europe/Moscow');
   
+  chmod($file_name, 0777);
   //ini_set("display_errors",1);
   //error_reporting(E_ALL);
 
-  //$objWriter->save($file_name);
+  $objWriter->save($file_name);
 }
 
 function work($str)

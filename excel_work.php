@@ -131,7 +131,7 @@ function work_back()
   
   date_default_timezone_set('Europe/Moscow');
   
-  chmod($file_name, 0777);
+  chmod($src_str, 0777);
   //ini_set("display_errors",1);
   //error_reporting(E_ALL);
 

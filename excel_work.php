@@ -72,7 +72,7 @@ function work_back()
 
   if ($_SESSION["second_name"] == "orders_elena")
   {
-    $src_str = "/data/dar.xls";
+    $src_str = "\data\dar.xls";
   }
   else if ($_SESSION["name"] == "orders_mh")
   {

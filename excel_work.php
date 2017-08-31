@@ -93,7 +93,7 @@ function work_back()
 
     $file_name = $_SERVER['DOCUMENT_ROOT'] . $src_str;
     
-  chmod($file_name, 0777);
+    chmod($file_name, 0777);
     $fileType = 'Excel5';
 
     $objReader = PHPExcel_IOFactory::createReader($fileType);
@@ -129,14 +129,14 @@ function work_back()
     ->setCellValue('A20', "Сумма прописью: ");
   
   $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, $fileType);
-  ob_end_clean();
+  //ob_end_clean();
   date_default_timezone_set('Europe/Moscow');
   
   /*ini_set("display_errors",1);
   error_reporting(E_ALL);*/
   
-  ini_set("display_errors",1);
-  error_reporting(E_ALL);
+  //ini_set("display_errors",1);
+  //error_reporting(E_ALL);
   //unlink($file_name);
   $objWriter->save($file_name);
 

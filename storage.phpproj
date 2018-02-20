@@ -1,0 +1,72 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>storage</Name>
+    <ProjectGuid>2dcc189c-e688-4904-8fbe-ae4a82814cad</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <AssemblyName>storage</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="checkEnter.php" />
+    <Compile Include="components\database.php" />
+    <Compile Include="components\Db.php" />
+    <Compile Include="components\Router.php" />
+    <Compile Include="config\db_params.php" />
+    <Compile Include="config\routes.php" />
+    <Compile Include="controllers\ArchiveController.php" />
+    <Compile Include="controllers\MainController.php" />
+    <Compile Include="controllers\OrdersController.php" />
+    <Compile Include="controllers\ProductsController.php" />
+    <Compile Include="controllers\StorageController.php" />
+    <Compile Include="controllers\UsersController.php" />
+    <Compile Include="Db.php" />
+    <Compile Include="index.php" />
+    <Compile Include="models\Main.php" />
+    <Compile Include="models\Orders.php" />
+    <Compile Include="models\Products.php" />
+    <Compile Include="models\Storage.php" />
+    <Compile Include="models\Users.php" />
+    <Compile Include="styles.php" />
+    <Compile Include="test.php" />
+    <Compile Include="views\archive\show_archive.php" />
+    <Compile Include="views\checkEnter.php" />
+    <Compile Include="views\main\main_page.php" />
+    <Compile Include="views\orders\save_order_garden.php" />
+    <Compile Include="views\orders\save_order_kruiz.php" />
+    <Compile Include="views\orders\save_order_main.php" />
+    <Compile Include="views\orders\save_order_mh.php" />
+    <Compile Include="views\orders\score_order.php" />
+    <Compile Include="views\orders\add_order.php" />
+    <Compile Include="views\orders\add_order_back.php" />
+    <Compile Include="views\orders\add_product.php" />
+    <Compile Include="views\storage\add_product.php" />
+    <Compile Include="views\storage\change_product.php" />
+    <Compile Include="views\storage\show_storage.php" />
+    <Compile Include="views\users\enter.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="components\" />
+    <Folder Include="config\" />
+    <Folder Include="controllers\" />
+    <Folder Include="models\" />
+    <Folder Include="template\" />
+    <Folder Include="template\css\" />
+    <Folder Include="template\images\" />
+    <Folder Include="views\" />
+    <Folder Include="views\images\" />
+    <Folder Include="views\main\" />
+    <Folder Include="views\archive\" />
+    <Folder Include="views\storage\" />
+    <Folder Include="views\orders\" />
+    <Folder Include="views\users\" />
+  </ItemGroup>
+</Project>

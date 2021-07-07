@@ -1,0 +1,36 @@
+<html>
+<body>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<?php 
+//подключение в базе данных
+  function connect_db()
+  {
+     $mysqli = new mysqli("localhost", "admin_dm", "12345", "storage");
+        
+    header("Content-Type: text/html; charset=UTF-8"); // Где-нибудь в начале PHP скрипта
+    $mysqli->query( "SET CHARSET utf8" );
+
+    if ($mysqli->connect_errno == true)
+    { 
+        var_dump($mysqli->connect_errno);
+        echo "call admin";
+    }
+    return $mysqli;
+  }
+  
+  function connect_db_orders()
+  {
+    $mysqli = new mysqli("localhost", "admin_dm", "12345", "storage");
+        
+    //header("Content-Type: text/html; charset=UTF-8"); // Где-нибудь в начале PHP скрипта
+    $mysqli->query( "SET CHARSET utf8" );
+    if ($mysqli->connect_errno == true)
+    { 
+      var_dump($mysqli->connect_errno);
+        echo "call admin";
+    }
+    return $mysqli;
+  }
+?>
+</body>
+</html>

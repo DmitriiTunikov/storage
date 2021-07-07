@@ -1,0 +1,12 @@
+AddDefaultCharset utf-8
+php_value error_reporting 1
+RewriteEngine on
+RewriteBase /
+php_value max_execution_time 10000
+addDefaultCharset utf-8
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+php_flag display_errors On
+#показать все ошибки кроме предупреждений (Notice)
+php_value error_reporting "E_ALL & ~E_NOTICE & ~E_WARNING"
+RewriteRule ^(.*)$ index.php
